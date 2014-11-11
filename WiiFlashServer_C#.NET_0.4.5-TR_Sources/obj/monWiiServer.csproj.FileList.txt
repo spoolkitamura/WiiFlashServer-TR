@@ -1,0 +1,59 @@
+C:\travail\Blend\monWiiServer\obj\Debug\wf.baml
+C:\travail\Blend\monWiiServer\obj\Debug\wfDictionnarie.baml
+C:\travail\Blend\monWiiServer\obj\Debug\Window1.baml
+C:\travail\Blend\monWiiServer\obj\Debug\App.baml
+C:\travail\Blend\monWiiServer\obj\Debug\Window1.g.cs
+C:\travail\Blend\monWiiServer\obj\Debug\App.g.cs
+C:\travail\Blend\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.cache
+C:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.baml
+C:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.baml
+G:\travail\Blend\monWiiServer\obj\Debug\wf.baml
+G:\travail\Blend\monWiiServer\obj\Debug\wfDictionnarie.baml
+G:\travail\Blend\monWiiServer\obj\Debug\WiiSat.baml
+G:\travail\Blend\monWiiServer\obj\Debug\WiiServer.baml
+G:\travail\Blend\monWiiServer\obj\Debug\Window1.baml
+G:\travail\Blend\monWiiServer\obj\Debug\App.baml
+G:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\WiiSat.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\WiiServer.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\Window1.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\App.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.cache
+G:\travail\Blend\monWiiServer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\travail\Blend\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.lref
+E:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.baml
+E:\travail\Blend\monWiiServer\obj\Debug\wf.baml
+E:\travail\Blend\monWiiServer\obj\Debug\wfDictionnarie.baml
+E:\travail\Blend\monWiiServer\obj\Debug\WiiSat.baml
+E:\travail\Blend\monWiiServer\obj\Debug\WiiServer.baml
+E:\travail\Blend\monWiiServer\obj\Debug\App.baml
+E:\travail\Blend\monWiiServer\obj\Debug\Copie de Window1.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\WiiSat.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\WiiServer.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\Window1.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\App.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\travail\Blend\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.cache
+E:\travail\Blend\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.lref
+E:\travail\Blend\monWiiServer\obj\Debug\Window1.baml
+G:\travail\Blend\monWiiServer\obj\Debug\button.baml
+bin\Debug\monWiiServer.exe
+bin\Debug\monWiiServer.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\button.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\wf.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\wfDictionnarie.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\WiiSat.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\Window1.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\App.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\WiiSat.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\Window1.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\App.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.cache
+C:\Documents and Settings\Thibault Imbert\Bureau\monWiiServer\obj\Debug\monWiiServer_MarkupCompile.lref
+obj\Debug\monWiiServer.g.resources
+obj\Debug\monWiiServer.exe
+obj\Debug\monWiiServer.pdb
+obj\Debug\monWiiServer.wiiflash.ico

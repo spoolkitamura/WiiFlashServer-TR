@@ -1,0 +1,482 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+	<!-- Resource dictionary entries should be defined here. -->
+	<VisualBrush x:Key="VisuaMask" Stretch="None" Visual="{Binding ElementName=rectangle}"/>
+	<Style x:Key="buttonPhoto" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<ControlTemplate.Resources>
+						<Storyboard x:Key="onMouseOverSB">
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(FrameworkElement.Width)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(FrameworkElement.Height)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.Opacity)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.6000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="button1">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.7000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="button2">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="button3">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:01.1000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="button4">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.8000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="30" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="30"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="0"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="button5">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.2"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.9" KeySpline="0.5,0,0.75,1"/>
+								<SplineDoubleKeyFrame KeySpline="0.5,0.5,0.75,1" KeyTime="00:00:00.9000000" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+						</Storyboard>
+					</ControlTemplate.Resources>
+					<Grid Width="Auto" Height="Auto">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.5*"/>
+							<ColumnDefinition Width="0.5*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<Grid Width="Auto" Height="Auto" Grid.ColumnSpan="2" Grid.RowSpan="1">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="0.462*"/>
+								<RowDefinition Height="0.5*"/>
+							</Grid.RowDefinitions>
+							<Rectangle Opacity="1" Visibility="Visible" Fill="#FF000000" Stroke="{x:Null}" RadiusX="6" RadiusY="6" Margin="6,6,6,6" x:Name="rectangle" Width="Auto" Height="Auto" Grid.RowSpan="2"/>
+							<Path x:Name="Path" Width="Auto" Height="Auto" Stretch="Fill" StrokeThickness="4" StrokeLineJoin="Round" Stroke="#CD36368C" Data="F1 M 7.00002,2L 84.7038,2C 87.4653,2 89.7038,4.23856 89.7038,7.00003L 89.7038,84.7039C 89.7038,87.4654 87.4653,89.7039 84.7038,89.7039L 7.00002,89.7039C 4.23857,89.7039 2,87.4654 2,84.7039L 2,7.00003C 2,4.23856 4.23857,2 7.00002,2 Z " Grid.RowSpan="2">
+								<Path.Fill>
+									<LinearGradientBrush StartPoint="0.0204511,0.563396" EndPoint="0.969586,0.563396">
+										<GradientStop Color="#CD36368C" Offset="0"/>
+										<GradientStop Color="#CD8B8BFF" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="Path_Copy" Width="Auto" Height="Auto" Stretch="Fill" StrokeThickness="4" StrokeLineJoin="Round" Stroke="#CD36368C" Data="F1 M 7.00002,2L 84.7038,2C 87.4653,2 89.7038,4.23856 89.7038,7.00003L 89.7038,84.7039C 89.7038,87.4654 87.4653,89.7039 84.7038,89.7039L 7.00002,89.7039C 4.23857,89.7039 2,87.4654 2,84.7039L 2,7.00003C 2,4.23856 4.23857,2 7.00002,2 Z " Opacity="0.3" Grid.RowSpan="2">
+								<Path.Fill>
+									<LinearGradientBrush StartPoint="0.0204511,0.563396" EndPoint="0.969586,0.563396">
+										<GradientStop Color="#CD36368C" Offset="0"/>
+										<GradientStop Color="#CD8B8BFF" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="Path_0" Width="Auto" Height="Auto" Stretch="Fill" Data="F1 M 8.66669,2.00003L 83.0371,2.00003C 86.719,2.00003 89.7038,4.98483 89.7038,8.66672L 89.7038,30.0774C 65.522,40.5219 44.6331,5.33667 2,30.0774L 2,8.66672C 2,4.98483 4.98476,2.00003 8.66669,2.00003 Z " Margin="2,2,2,9" VerticalAlignment="Stretch">
+								<Path.Fill>
+									<LinearGradientBrush StartPoint="0.924448,0.00257355" EndPoint="0.924448,0.985389">
+										<GradientStop Color="#B8FFFFFF" Offset="0"/>
+										<GradientStop Color="#3EFFFFFF" Offset="0.908676"/>
+										<GradientStop Color="#00FFFFFF" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+						</Grid>
+						<Button Style="{DynamicResource icoStandard}" Width="30" Content="Button" Background="{DynamicResource pictoBtnProfil}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="-23,0,0,8" x:Name="button" VerticalAlignment="Bottom" Height="30" Grid.RowSpan="1">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+						<Button Style="{DynamicResource icoStandard}" Width="30" Content="Button" Background="{DynamicResource pictoBtnFlash}" BorderBrush="{x:Null}" Height="30" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Left" Margin="-23,0,0,42" x:Name="button1" VerticalAlignment="Bottom">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+						<Button Style="{DynamicResource icoPerso}" Width="30" Content="Button" Background="{DynamicResource pictoBtnContact}" BorderBrush="{x:Null}" Height="30" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Margin="8,-18,0,0" x:Name="button4" VerticalAlignment="Top">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+						<Button Style="{DynamicResource icoStandard}" Width="30" Content="Button" Background="{DynamicResource pictoBtnClose}" BorderBrush="{x:Null}" Height="30" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Margin="-8,-18,0,0" x:Name="button5" VerticalAlignment="Top" BorderThickness="0,0,0,0" Grid.Column="1">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+						<Button Style="{DynamicResource icoStandard}" Width="30" Content="Button" Background="{DynamicResource pictoBtnMail}" BorderBrush="{x:Null}" Height="30" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Margin="0,0,-26,8" x:Name="button2" VerticalAlignment="Bottom" Grid.Column="1" Grid.RowSpan="1">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+						<Button Style="{DynamicResource icoStandard}" Width="30" Content="Button" Background="{DynamicResource pictoBrnChat}" BorderBrush="{x:Null}" Height="30" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Margin="0,0,-26,42" x:Name="button3" VerticalAlignment="Bottom" Grid.Column="1">
+							<Button.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="0"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</Button.RenderTransform>
+						</Button>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsFocused" Value="True"/>
+						<Trigger Property="IsDefaulted" Value="True"/>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Trigger.EnterActions>
+								<BeginStoryboard Storyboard="{StaticResource onMouseOverSB}"/>
+							</Trigger.EnterActions>
+						</Trigger>
+						<Trigger Property="IsPressed" Value="True"/>
+						<Trigger Property="IsEnabled" Value="False"/>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="icoPerso" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Grid Width="Auto">
+						<Rectangle Stroke="#FFFFFFFF" StrokeThickness="2" RadiusX="4" RadiusY="4">
+							<Rectangle.Fill>
+								<LinearGradientBrush EndPoint="0.9,1" StartPoint="0.775,-0.4">
+									<GradientStop Color="#66FFFFFF" Offset="0"/>
+									<GradientStop Color="#92FFFFFF" Offset="0.952"/>
+								</LinearGradientBrush>
+							</Rectangle.Fill>
+						</Rectangle>
+						<Rectangle Stroke="{x:Null}" StrokeThickness="2" RadiusX="4" RadiusY="4" Fill="{TemplateBinding Background}" Margin="2,-3,2,3" Width="Auto" Height="Auto"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsFocused" Value="True"/>
+						<Trigger Property="IsDefaulted" Value="True"/>
+						<Trigger Property="IsMouseOver" Value="True"/>
+						<Trigger Property="IsPressed" Value="True"/>
+						<Trigger Property="IsEnabled" Value="False"/>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="icoStandard" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Grid Width="Auto">
+						<Rectangle Stroke="#FFFFFFFF" StrokeThickness="2" RadiusX="4" RadiusY="4">
+							<Rectangle.Fill>
+								<LinearGradientBrush EndPoint="0.9,1" StartPoint="0.775,-0.4">
+									<GradientStop Color="#66FFFFFF" Offset="0"/>
+									<GradientStop Color="#92FFFFFF" Offset="0.952"/>
+								</LinearGradientBrush>
+							</Rectangle.Fill>
+						</Rectangle>
+						<Rectangle Stroke="{x:Null}" StrokeThickness="2" RadiusX="4" RadiusY="4" Fill="{TemplateBinding Background}" Margin="2,2,2,2" Width="Auto" Height="Auto"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsFocused" Value="True"/>
+						<Trigger Property="IsDefaulted" Value="True"/>
+						<Trigger Property="IsMouseOver" Value="True"/>
+						<Trigger Property="IsPressed" Value="True"/>
+						<Trigger Property="IsEnabled" Value="False"/>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style x:Key="GridSplitterStyle" TargetType="{x:Type GridSplitter}">
+		<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type GridSplitter}">
+					<Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}"/>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

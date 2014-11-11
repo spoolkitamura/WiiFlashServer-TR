@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WiiFlashServer">
+</Property><Property Name="ソリューション ファイル" Value="D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\WiiFlashServer.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\WiiFlashServer.suo">
+</Property><Property Name="Date" Value="2014年10月30日">
+</Property><Property Name="Time" Value="23:45">
+</Property><Property Name="ログ番号" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WiiFlashServer.sln" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiFlashServer.sln としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="WiiFlashServer.suo" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiFlashServer.suo としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="プロジェクト ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiFlashServer.csproj としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="App.xaml.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\App.xaml.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="AssemblyInfo.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\AssemblyInfo.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\DataTypes.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiimoteLib\DataTypes.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\Events.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiimoteLib\Events.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\HIDImports.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiimoteLib\HIDImports.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\Wiimote.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiimoteLib\Wiimote.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\WiimoteCollection.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiimoteLib\WiimoteCollection.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiSat.xaml.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiSat.xaml.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiSatBO.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiSatBO.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="Window1.xaml.cs" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\Window1.xaml.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="wiiflash.ico" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\wiiflash.ico としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="App.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\App.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="button.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\button.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="wf.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\wf.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="wfDictionnarie.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\wfDictionnarie.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiSat.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\WiiSat.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="Window1.xaml" Description="ファイルは正常に D:\Home\Matter\_ruby\wii\WiiFlash Server - C# .NET - 0.4.5 Sources\WiiFlash Server C# .NET 0.4.5\Backup\Window1.xaml としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WiiFlashServer.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="WiiFlashServer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event></UpgradeLog>

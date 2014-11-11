@@ -1,0 +1,1205 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:Server="clr-namespace:Server"
+	x:Class="Server.Window1"
+	x:Name="Window"
+	Title="WiiFlash Server 0.4.5"
+	Width="232" Height="224" ResizeMode="NoResize" SizeToContent="Manual" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" ToolTip="" IsEnabled="True" Background="#00FFFFFF" Foreground="#00FFFFFF" AllowsTransparency="True" WindowStyle="None">
+
+	<Window.Resources>
+		
+		<Storyboard x:Key="onWindowLoadedTL">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ombreInt" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.17"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.2"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ombre" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.395"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.395"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#19FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#19FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#00FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#19FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#2DFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#2DFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfLumineux" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="4"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="18"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="17"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="18"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.836,0.926"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.633,0.051"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.281,-0.37"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.415,1.695"/>
+			</PointAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="85.256"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-7.568"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CloseSat" Storyboard.TargetProperty="(ToolTipService.ToolTip)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.9000000" Value="Close"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.1000000" Value="Minimize"/>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+    <Storyboard x:Key="onWindowClosed">
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ombreInt" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.17"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ombre" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.395"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.395"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+        <SplineColorKeyFrame KeyTime="00:00:01" Value="#19FFFFFF"/>
+        <SplineColorKeyFrame KeyTime="00:00:01.8000000" Value="#19FFFFFF"/>
+      </ColorAnimationUsingKeyFrames>
+      <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+        <SplineColorKeyFrame KeyTime="00:00:01" Value="#19FFFFFF"/>
+        <SplineColorKeyFrame KeyTime="00:00:01.8000000" Value="#00FFFFFF"/>
+      </ColorAnimationUsingKeyFrames>
+      <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+        <SplineColorKeyFrame KeyTime="00:00:01" Value="#2DFFFFFF"/>
+        <SplineColorKeyFrame KeyTime="00:00:01.8000000" Value="#2DFFFFFF"/>
+      </ColorAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat1">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfLumineux" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.3"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat2">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat3">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat4">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="50"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="48"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="52"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="30"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="30"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="18"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="17"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="18"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="4"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-5"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-6"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-6"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-3"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="CloseSat">
+        <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.9"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.2"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0.1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.1"/>
+      </DoubleAnimationUsingKeyFrames>
+      <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+        <SplinePointKeyFrame KeyTime="00:00:01" Value="0.633,0.051"/>
+        <SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.836,0.926"/>
+      </PointAnimationUsingKeyFrames>
+      <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+        <SplinePointKeyFrame KeyTime="00:00:01" Value="0.415,1.695"/>
+        <SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.281,-0.37"/>
+      </PointAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="-7.568"/>
+        <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="85.256"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid1" Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+		<Storyboard x:Key="onWindowError">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ombreInt" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.17"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.2"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ombre" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.395"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.395"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#19FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#19FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#00FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#19FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#2DFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#2DFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfLumineux" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="reflet" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WiiSat4">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="30"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="52"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="4"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="18"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="17"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="18"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="CloseSat">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.836,0.926"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.633,0.051"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.281,-0.37"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.415,1.695"/>
+			</PointAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="85.256"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-7.568"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF640000"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FF640000"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#00640000"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#00640000"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fondBleu" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.841"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.828"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFE90B0B"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FFE90B0B"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF540303"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FF540303"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF540303"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FF540303"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFF80808"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#FFF80808"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#CAF80808"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#CAF80808"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#01B10202"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#01B10202"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hallo" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#018B0000"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="#018B0000"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC0FEFE"/>
+				<SplineColorKeyFrame KeyTime="00:00:01" Value="#FFFEC0C0"/>
+				<SplineColorKeyFrame KeyTime="00:00:01.4000000" Value="#FFFEC0C0"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.504"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.507"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.504"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FD5DC9EA"/>
+				<SplineColorKeyFrame KeyTime="00:00:01" Value="#FDEA5D5D"/>
+				<SplineColorKeyFrame KeyTime="00:00:01.4000000" Value="#FDEA5D5D"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="wfMask" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF0499D8"/>
+				<SplineColorKeyFrame KeyTime="00:00:01" Value="#FFD80404"/>
+				<SplineColorKeyFrame KeyTime="00:00:01.4000000" Value="#FFD80404"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+  </Window.Resources>
+
+	<Window.BitmapEffect>
+		<DropShadowBitmapEffect Opacity="0.3"/>
+	</Window.BitmapEffect>
+
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+	</Window.Triggers>
+
+	<Grid x:Name="grid1" Width="217" Opacity="0" Height="208" MouseLeftButtonDown="Window_MouseRightButtonDown">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Ellipse RenderTransformOrigin="0.5,0.5" Fill="{x:Null}" StrokeThickness="3" Margin="-28.5,-27,28.501,19" x:Name="ellipse">
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-7.568"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+			<Ellipse.Stroke>
+				<LinearGradientBrush EndPoint="0.811,0.883" StartPoint="0.129,0.032">
+					<GradientStop Color="#FF01415E" Offset="0.976"/>
+					<GradientStop Color="#0001415E" Offset="0.411"/>
+				</LinearGradientBrush>
+			</Ellipse.Stroke>
+		</Ellipse>
+		<Grid HorizontalAlignment="Left" x:Name="ServerWF" VerticalAlignment="Top" Width="160" Height="160" ToolTip="WiiFlash Server 0.4.5" IsEnabled="True">
+			<Ellipse Stroke="{x:Null}" x:Name="fondBleu" Width="Auto" Height="Auto">
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<GradientStop Color="#FF003D64" Offset="0.841"/>
+						<GradientStop Color="#00003D64" Offset="0.961"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+				<Ellipse.OpacityMask>
+					<RadialGradientBrush>
+						<GradientStop Color="#FF000000" Offset="0.922"/>
+						<GradientStop Color="#00FFFFFF" Offset="0.957"/>
+					</RadialGradientBrush>
+				</Ellipse.OpacityMask>
+			</Ellipse>
+			<Ellipse Stroke="{x:Null}" Margin="8,8,8,8" Width="Auto" Height="Auto" x:Name="ellipse1">
+				<Ellipse.Fill>
+					<RadialGradientBrush GradientOrigin="0.486,0.521" SpreadMethod="Pad">
+						<GradientStop Color="#FF0BC7E9" Offset="0.911"/>
+						<GradientStop Color="#FF034854" Offset="0.88"/>
+						<GradientStop Color="#00034854" Offset="0.984"/>
+						<GradientStop Color="#FF034854" Offset="0"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+				<Ellipse.OpacityMask>
+					<RadialGradientBrush GradientOrigin="0.238,0.71">
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.641" ScaleY="1.641"/>
+								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform X="0.066" Y="-0.008"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#00FFFFFF" Offset="0"/>
+						<GradientStop Color="#F3F0F0F0" Offset="1"/>
+					</RadialGradientBrush>
+				</Ellipse.OpacityMask>
+			</Ellipse>
+			<Ellipse Stroke="{x:Null}" Margin="16,16.973,16,8" x:Name="hallo" Width="Auto" Height="Auto">
+				<Ellipse.Fill>
+					<LinearGradientBrush EndPoint="0.415,1.695" StartPoint="0.633,0.051">
+						<GradientStop Color="#CA08EAF8" Offset="0.066"/>
+						<GradientStop Color="#0100488B" Offset="0.585"/>
+						<GradientStop Color="#010280B1" Offset="0.38"/>
+						<GradientStop Color="#FF08EAF8" Offset="0"/>
+					</LinearGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Path Stretch="Fill" Stroke="{x:Null}" Margin="16.442,16.485,18.679,65.641" x:Name="reflet" Width="Auto" Height="Auto" Data="M17.508979,93.873573 C23.130315,74.74465 33.998997,58.000227 55.998997,48.000227 91.701152,31.771975 131.00026,52.000084 141.32123,64.029038 138.0692,52.344911 130.86233,40.207027 120.62098,31.103615 113.41411,25.793291 102.03484,17.069188 80,16 67.897015,15.931035 54.621196,20.482754 45.897086,26.551713 36.566168,33.042799 26.565992,42.560709 21.241964,57.275817 17.000464,67.290446 15.076893,75.877203 17.508979,93.873573 z" RenderTransformOrigin="0.5,0.5">
+				<Path.Fill>
+					<LinearGradientBrush EndPoint="0.364,-0.006" StartPoint="0.484,0.78">
+						<GradientStop Color="#2DFFFFFF" Offset="1"/>
+						<GradientStop Color="#19FFFFFF" Offset="0"/>
+						<GradientStop Color="#19FFFFFF" Offset="0.876"/>
+					</LinearGradientBrush>
+				</Path.Fill>
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="0"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+			<Rectangle Stroke="{x:Null}" Height="Auto" Fill="{DynamicResource WF}" Opacity="0.395" Margin="30,45,35,35" x:Name="Ombre" Width="Auto">
+				<Rectangle.BitmapEffect>
+					<BlurBitmapEffect Radius="10"/>
+				</Rectangle.BitmapEffect>
+			</Rectangle>
+			<Rectangle OpacityMask="{DynamicResource WF}" Stroke="{x:Null}" Margin="30,45,35,35" x:Name="wfMask" Width="Auto" Height="Auto" Opacity="1">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.955,0.092" StartPoint="-0.114,1.395">
+						<GradientStop Color="#FF0499D8" Offset="0"/>
+						<GradientStop Color="#FFC0FEFE" Offset="1"/>
+						<GradientStop Color="#FD5DC9EA" Offset="0.504"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle OpacityMask="{DynamicResource WF}" Stroke="{x:Null}" x:Name="wfLumineux" Width="Auto" Height="Auto" Opacity="0.3" Fill="#FFFFFFFF" Margin="30.013,45.005,34.987,34.995"/>
+			<Rectangle Stroke="{x:Null}" Height="Auto" Fill="{DynamicResource WF}" Opacity="0.17" x:Name="ombreInt" Margin="31,46,34,34" Width="Auto">
+				<Rectangle.BitmapEffect>
+					<BlurBitmapEffect Radius="2"/>
+				</Rectangle.BitmapEffect>
+			</Rectangle>
+		</Grid>
+		<Button RenderTransformOrigin="0.5,0.5" Visibility="Visible" x:Name="CloseSat" Style="{DynamicResource closeSatStyle}" Width="22.659" Content="Button" HorizontalAlignment="Right" Margin="0,27.177,27.835,0" Opacity="1" Cursor="Hand" VerticalAlignment="Top" Height="22.921" Click="onExit" ToolTip="Minimize">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Button.RenderTransform>
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FFE3E5F0" Offset="0.5"/>
+					<GradientStop Color="#00C6C5D7" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<Server:WiiSat Margin="0,62,6.5,96" WiimoteVisibility="{Binding Path=WiimoteVisibility, Mode=Default}" x:Name="WiiSat1" HorizontalAlignment="Right" Width="50" Height="50" NunchuckVisibility="{Binding Path=NunchuckVisibility, Mode=Default}" RenderTransformOrigin="0.5,0.5" ToolTip="" IsEnabled="True" Cursor="Arrow" ClassicControllerVisibility="{Binding Path=ClassicControllerVisibility, Mode=Default}" NunchukShadowVisibility="{Binding Path=NunchukShadowVisibility, Mode=Default}">
+			<Server:WiiSat.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Server:WiiSat.RenderTransform>
+		</Server:WiiSat>
+		<Server:WiiSat WiimoteVisibility="{Binding Path=WiimoteVisibility, Mode=Default}" Margin="0,0,23.032,38" x:Name="WiiSat2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Height="50" NunchuckVisibility="{Binding Path=NunchuckVisibility, Mode=Default}" RenderTransformOrigin="0.5,0.5" ToolTip="" IsEnabled="True" Cursor="Arrow" ClassicControllerVisibility="{Binding Path=ClassicControllerVisibility, Mode=Default}" NunchukShadowVisibility="{Binding Path=NunchukShadowVisibility, Mode=Default}">
+			<Server:WiiSat.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Server:WiiSat.RenderTransform>
+		</Server:WiiSat>
+		<Server:WiiSat WiimoteVisibility="{Binding Path=WiimoteVisibility, Mode=Default}" x:Name="WiiSat3" NunchuckVisibility="{Binding Path=NunchuckVisibility, Mode=Default}" Margin="92.02,0,74.98,1.496" VerticalAlignment="Bottom" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" ToolTip="" IsEnabled="True" Cursor="Arrow" ClassicControllerVisibility="{Binding Path=ClassicControllerVisibility, Mode=Default}" NunchukShadowVisibility="{Binding Path=NunchukShadowVisibility, Mode=Default}">
+			<Server:WiiSat.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Server:WiiSat.RenderTransform>
+		</Server:WiiSat>
+		<Server:WiiSat WiimoteVisibility="{Binding Path=WiimoteVisibility, Mode=Default}" x:Name="WiiSat4" NunchuckVisibility="{Binding Path=NunchuckVisibility, Mode=Default}" HorizontalAlignment="Left" Margin="30.345,0,0,-0.557" VerticalAlignment="Bottom" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" ToolTip="" IsEnabled="True" Cursor="Arrow" ClassicControllerVisibility="{Binding Path=ClassicControllerVisibility, Mode=Default}" NunchukShadowVisibility="{Binding Path=NunchukShadowVisibility, Mode=Default}">
+			<Server:WiiSat.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Server:WiiSat.RenderTransform>
+		</Server:WiiSat>
+	</Grid>
+</Window>

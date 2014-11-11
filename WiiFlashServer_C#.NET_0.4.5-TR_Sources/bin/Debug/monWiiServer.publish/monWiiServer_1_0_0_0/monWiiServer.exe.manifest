@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="monWiiServer.exe" version="1.0.0.0" publicKeyToken="6558e7e2751ddb53" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="wiiflash.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="monWiiServer" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="monWiiServer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="monWiiServer.exe" size="365056">
+      <assemblyIdentity name="monWiiServer" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>s+vIXVuLzoDEGPFtWyrB3MVUQyc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="wiiflash.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KCdPNr+uRSHp7G9EAJV7Ez8qXrw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BYTEARRA-5791C9\Thibault Imbert" issuerKeyHash="33b720a2d024c81a6f42ca3b4388cc64b0d582d7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/JucEHDxUG49mQm9NmnfGtzi4Ic=</DigestValue></Reference></SignedInfo><SignatureValue>jOOBXG4Zq0qoNXw/ddb2FRFdfo1YNG7UlJmKH8d9gll6C1dcoQaYOSrXpvPlEhMFhxTI8oIRHnZopLv3HBw1fLcphLdIATgg1ciGtIBgOEjQcGAe5zGYoTi7wJmrdyZ16040Y6fzxhcA2A0b+2B6B3n7lXrSQhQ9UYy8cGmKCWA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qRZXcwl2woqVe0CziRDZP1pMFSFw8u07OJrlQsUAy2bovQtvfcjsBGcWVY4P7cqDLO3rYwzBr/xP8mLm+icVkf3fAQBDb2gkFXTcLzyOlFMAHweko7G/Z36k9uSRcRbL7yK3LY96GFn6BVsslSDs/ypo5vaD/eAB3+icBmxQOic=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="87e0e2dc1adf6936bd09993d6e50f170109c9bfc" Description="" Url=""><as:assemblyIdentity name="monWiiServer.exe" version="1.0.0.0" publicKeyToken="6558e7e2751ddb53" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BYTEARRA-5791C9\Thibault Imbert</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FYVYRoYH9IpGOVIGfBP0dt/OcWo=</DigestValue></Reference></SignedInfo><SignatureValue>Aalg+gqiRl970qJxStHE03ASH3938Rt0Tew4A/aksUBaxejeau5IqYXK5BE2cfSnVems/oon6PZPmW+eCngk5OnhtWAg8SClrSlz9MOff9SE3b200U0lz7yVbVQBhvnz3uS5b7ewKl0KISo5iSSXvutycv9rEWRFC49OYm1GPQc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qRZXcwl2woqVe0CziRDZP1pMFSFw8u07OJrlQsUAy2bovQtvfcjsBGcWVY4P7cqDLO3rYwzBr/xP8mLm+icVkf3fAQBDb2gkFXTcLzyOlFMAHweko7G/Z36k9uSRcRbL7yK3LY96GFn6BVsslSDs/ypo5vaD/eAB3+icBmxQOic=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXqgAwIBAgIQtFb0T1YCoI1KSE4d8MLwYzAJBgUrDgMCHQUAMEkxRzBFBgNVBAMePgBCAFkAVABFAEEAUgBSAEEALQA1ADcAOQAxAEMAOQBcAFQAaABpAGIAYQB1AGwAdAAgAEkAbQBiAGUAcgB0MB4XDTA3MDUwOTE5NTY1OFoXDTA4MDUwOTAxNTY1OFowSTFHMEUGA1UEAx4+AEIAWQBUAEUAQQBSAFIAQQAtADUANwA5ADEAQwA5AFwAVABoAGkAYgBhAHUAbAB0ACAASQBtAGIAZQByAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKkWV3MJdsKKlXtAs4kQ2T9aTBUhcPLtOzia5ULFAMtm6L0Lb33I7ARnFlWOD+3Kgyzt62MMwa/8T/Ji5vonFZH93wEAQ29oJBV03C88jpRTAB8HpKOxv2d+pPbkkXEWy+8ity2PehhZ+gVbLJUg7P8qaOb2g/3gAd/onAZsUDonAgMBAAEwCQYFKw4DAh0FAAOBgQBvUXUbo4UrjizlTfhc/LEQJBz7P0lyDveF5KbJnJpQ+6zMH1AwJ6nPDa7Jbp+v1iWCLQExNQGOQun56F1OfJWQeVJ16t4ikJvDQZ6AA3SNSkwcKSqRsOZSk/3EPFBepLx97SnpBmurBb2GUjiBJIceB83WRtREJBz6aC2fF7AO3A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WiiFlashServer">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\WiiFlashServer.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\WiiFlashServer.suo">
+</Property><Property Name="Date" Value="vendredi 4 mai 2007">
+</Property><Property Name="Time" Value="20:39">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WiiFlashServer.sln" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiiFlashServer.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WiiFlashServer.suo" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiiFlashServer.suo">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="Project file successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiiFlashServer.csproj">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="App.xaml.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\DataTypes.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiimoteLib\DataTypes.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\Events.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiimoteLib\Events.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\HIDImports.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiimoteLib\HIDImports.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiimoteLib\Wiimote.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiimoteLib\Wiimote.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiSat.xaml.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiiSat.xaml.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiSatBO.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\WiiSatBO.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="Window1.xaml.cs" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="wiiflash.ico" Description="File successfully backed up as C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\Backup\wiiflash.ico">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WiiFlashServer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WiiFlashServer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WiiFlashServer" Source="WiiFlashServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

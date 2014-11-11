@@ -1,0 +1,68 @@
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer.exe
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer.pdb
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\bin\Debug\monWiiServer.exe
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\bin\Debug\monWiiServer.pdb
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\button.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\wf.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\wfDictionnarie.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\WiiSat.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\Window1.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\App.baml
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\WiiSat.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\Window1.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\App.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer_MarkupCompile.cache
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer_MarkupCompile.lref
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer.g.resources
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\bin\Debug\monWiiServer.exe.manifest
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\bin\Debug\monWiiServer.application
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer.exe.manifest
+C:\Documents and Settings\Thibault Imbert\Bureau\WiiFlash Server .NET\obj\Debug\monWiiServer.application
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\ResolveAssemblyReference.cache
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\button.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\wf.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\wfDictionnarie.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\WiiSat.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\App.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\WiiSat.g.cs
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\Window1.g.cs
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\App.g.cs
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\Window1.baml
+K:\Work\WiiFlash Server .NET Latest\bin\Debug\monWiiServer.exe.manifest
+K:\Work\WiiFlash Server .NET Latest\bin\Debug\monWiiServer.application
+K:\Work\WiiFlash Server .NET Latest\bin\Debug\monWiiServer.exe
+K:\Work\WiiFlash Server .NET Latest\bin\Debug\monWiiServer.pdb
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer_MarkupCompile.cache
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer_MarkupCompile.lref
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer.g.resources
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer.exe.manifest
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer.application
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer.exe
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\monWiiServer.pdb
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\Wiimote.baml
+K:\Work\WiiFlash Server .NET Latest\obj\Debug\Wiimote.g.cs
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\bin\Debug\WiiFlashServer.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\bin\Debug\WiiFlashServer.application
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\bin\Debug\WiiFlashServer.exe
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\bin\Debug\WiiFlashServer.pdb
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\button.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\wf.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\wfDictionnarie.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiSat.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\App.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiSat.g.cs
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\Window1.g.cs
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer_MarkupCompile.cache
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer_MarkupCompile.lref
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\Window1.baml
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer.g.resources
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer.application
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer.exe
+C:\Documents and Settings\Administrateur\Bureau\WiiFlash Server .NET Latest Final\obj\Debug\WiiFlashServer.pdb
